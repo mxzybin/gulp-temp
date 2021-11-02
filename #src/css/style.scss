@@ -1,0 +1,62 @@
+@import "vars.scss";
+/* === GENERAL / ОБНУЛЕНИЕ === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    height: 100%;
+    background-color: $cl-prime;
+}
+
+body {
+    height: 100%;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1172px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
